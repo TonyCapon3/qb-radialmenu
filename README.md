@@ -6,6 +6,9 @@ qb-core (https://github.com/qbcore-framework/qb-core)
 
 veh-control (https://github.com/Manvaril/vehcontrol)
 
+# Preview
+https://medal.tv/games/gta-v/clips/nHmgljNSOWmj1/d1337D6fr7EG?invite=cr-MSxxem8sNDIxNDM3MTcs
+
 # License
 
     QBCore Framework
