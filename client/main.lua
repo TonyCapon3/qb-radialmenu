@@ -77,8 +77,8 @@ end
 
 local function SetupVehicleMenu()
     local VehicleMenu = {
-        id = 'vehicle',
-        title = 'Vehicle',
+        id = 'control',
+        title = 'Car Control',
         icon = 'car',
         type = 'client',
         event = 'vehcontrol:openExternal',
@@ -87,37 +87,9 @@ local function SetupVehicleMenu()
 
     local ped = PlayerPedId()
     local Vehicle = GetVehiclePedIsIn(ped) ~= 0 and GetVehiclePedIsIn(ped) or getNearestVeh()
-    -- if Vehicle ~= 0 then
-    --     VehicleMenu.items[#VehicleMenu.items+1] = Config.VehicleDoors
-    --     if Config.EnableExtraMenu then VehicleMenu.items[#VehicleMenu.items+1] = Config.VehicleExtras end
+   
 
-    --     if IsPedInAnyVehicle(ped) then
-    --         local seatIndex = #VehicleMenu.items+1
-    --         VehicleMenu.items[seatIndex] = deepcopy(Config.VehicleSeats)
-
-    --         local seatTable = {
-    --             [1] = Lang:t("options.driver_seat"),
-    --             [2] = Lang:t("options.passenger_seat"),
-    --             [3] = Lang:t("options.rear_left_seat"),
-    --             [4] = Lang:t("options.rear_right_seat"),
-    --         }
-
-    --         local AmountOfSeats = GetVehicleModelNumberOfSeats(GetEntityModel(Vehicle))
-    --         for i = 1, AmountOfSeats do
-    --             local newIndex = #VehicleMenu.items[seatIndex].items+1
-    --             VehicleMenu.items[seatIndex].items[newIndex] = {
-    --                 id = i - 2,
-    --                 title = seatTable[i] or Lang:t("options.other_seats"),
-    --                 icon = 'caret-up',
-    --                 type = 'client',
-    --                 event = 'qb-radialmenu:client:ChangeSeat',
-    --                 shouldClose = false,
-    --             }
-    --         end
-    --     end
-    -- end
-
-    if Vehicle == 0 then                 --fixed by tc, this comment out and new loop is for vehicle control menu to open 
+    if Vehicle == 0 then                 --fixed for new vehcontrol
         if vehicleIndex then
             RemoveOption(vehicleIndex)
             vehicleIndex = nil
