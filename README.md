@@ -9,7 +9,7 @@ veh-control (https://github.com/Manvaril/vehcontrol)
 # Preview
 https://medal.tv/games/gta-v/clips/nHmgljNSOWmj1/d1337D6fr7EG?invite=cr-MSxxem8sNDIxNDM3MTcs
 
-#Credits
+# Credits
 
 https://github.com/KevinGirardx/qb-radialmenu
 
