@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+h1 {
+    font-weight: bold;
+    color: white;
+}
+
+div.info {
+    margin: 12px 0;
+}
+
+div.info * {
+    color: white;
+}
+
+#icons {
+    display: none;
+    filter:url(#drop-shadow);
+}
+
+.container {
+    position: absolute;
+    left: 1000px;
+}
+
+#vehicle {
+    fill: white;
+}
+
+
+div.menuHolder {
+    user-select: none;
+    -moz-user-select: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30%;
+}
+
+svg.icons {
+    display: none;
+}
+
+svg.menu {
+    position: absolute;
+    overflow: visible;
+    transition: .1s;
+    transition-timing-function: ease-out;
+}
+
+svg.menu.inner {
+    transform: scale(0.66) rotate(-10deg);
+    opacity: 0;
+    visibility: hidden;
+}
+
+svg.menu.outer {
+    opacity: 0;
+    visibility: hidden;
+}
+
+svg.menu > g > path {
+    fill: rgb(23 23 23 / 80%);
+    opacity: 50%;
+}
+
+svg.menu > g.sector > path {
+    cursor: pointer;
+}
+
+svg.menu > g.sector > text,
+svg.menu > g.sector > use {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: inline-block;
+    /* font-variant: normal; */
+    text-rendering: auto;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 600;
+    margin-top: 5px;
+    font-size: 0.28em;
+    line-height: 0.75em;
+    vertical-align: -0.0667em;
+    letter-spacing: 0.20px;
+    cursor: pointer;
+    fill: white;
+}
+
+svg.menu > g.sector:hover > path {
+    fill: #0fa4e9;
+    opacity: 40%;
+
+}
+
+svg.menu > g.center:hover > circle {
+    fill:#0fa4e9;
+    opacity: 40%;
+}
+
+svg.menu > g.center > circle {
+    cursor: pointer;
+    fill: rgb(23 23 23 / 80%);
+    opacity: 50%;
+}
+
+svg.menu > g.center > text,
+svg.menu > g.center > use {
+    margin-top: 5px;
+    font-size: 2.5px;
+    cursor: pointer;
+    fill: white;
+}
