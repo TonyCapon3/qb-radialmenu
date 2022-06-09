@@ -7,7 +7,7 @@ qb-core (https://github.com/qbcore-framework/qb-core)
 veh-control (https://github.com/Manvaril/vehcontrol)
 
 # Preview
-https://medal.tv/games/gta-v/clips/nHmgljNSOWmj1/d1337D6fr7EG?invite=cr-MSxxem8sNDIxNDM3MTcs
+https://medal.tv/games/gta-v/clips/nNNM16zG4tF3_/d1337SFErMFM?invite=cr-MSxUQnAsNDIxNDM3MTcs
 
 # Credits
 
